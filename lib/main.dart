@@ -1,3 +1,4 @@
+import 'package:deliveryapp/src/utils/my_colors.dart';
 import 'package:flutter/material.dart';
 import 'Routes/routes.dart';
 
@@ -18,6 +19,9 @@ class _MyAppState extends State<MyApp> {
       title: 'Delivery App',
       initialRoute: 'login',
       routes: appRoutes,
+      theme: ThemeData(
+        primaryColor: MyColors.primaryColor,
+      ),
     );
   }
 }
